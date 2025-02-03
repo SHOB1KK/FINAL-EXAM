@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\EXAM FINAL\\TASK3\\UserLibrary\\UserLibrary.csproj": {}
+    "C:\\Users\\Юсуф\\Desktop\\EXAM FINAL\\TASK3\\UserLibrary\\UserLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\EXAM FINAL\\TASK3\\UserLibrary\\UserLibrary.csproj": {
+    "C:\\Users\\Юсуф\\Desktop\\EXAM FINAL\\TASK3\\UserLibrary\\UserLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\EXAM FINAL\\TASK3\\UserLibrary\\UserLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Юсуф\\Desktop\\EXAM FINAL\\TASK3\\UserLibrary\\UserLibrary.csproj",
         "projectName": "UserLibrary",
-        "projectPath": "C:\\Users\\user\\Desktop\\EXAM FINAL\\TASK3\\UserLibrary\\UserLibrary.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\EXAM FINAL\\TASK3\\UserLibrary\\obj\\",
+        "projectPath": "C:\\Users\\Юсуф\\Desktop\\EXAM FINAL\\TASK3\\UserLibrary\\UserLibrary.csproj",
+        "packagesPath": "C:\\Users\\Юсуф\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Юсуф\\Desktop\\EXAM FINAL\\TASK3\\UserLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Юсуф\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"

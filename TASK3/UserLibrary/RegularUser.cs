@@ -1,9 +1,12 @@
-namespace UserLibrary;
-
-public class AdminUser(int unique, string name, string email, string userrole) : User(unique, name, email, userrole)
+namespace UserLibrary
 {
-    public void DisplayInfo()
+    public class RegularUser : User
     {
-        
+        public RegularUser(string userName, string email, string role) : base(userName, email, role) { }
+
+        public override void DisplayInfo()
+        {
+            Console.WriteLine($"Пользователь: {Name}, Email: {Email}, Роль: {UserRole}, ID: {UserId}");
+        }
     }
 }

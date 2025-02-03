@@ -1,26 +1,19 @@
-namespace UserLibrary;
-
-public class Role
+namespace UserLibrary
 {
-    public string RoleName { get; set; }
-    private List<string> permissions;
-
-    public Role(string roleName)
+    public class Role
     {
-        RoleName = roleName;
-        permissions = new List<string>();
-    }
+        public string RoleName { get; set; }
+        public List<string> Permissions { get; set; }
 
-    public void AddPermission(string permission)
-    {
-        if (!permissions.Contains(permission))
+        public Role(string roleName)
         {
-            permissions.Add(permission);
+            RoleName = roleName;
+            Permissions = new List<string>();
         }
-    }
 
-    public List<string> GetPermissions()
-    {
-        return new List<string>(permissions);
+        public List<string> GetPermissions()
+        {
+            return Permissions;
+        }
     }
 }

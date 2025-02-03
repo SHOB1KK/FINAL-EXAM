@@ -1,26 +1,45 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "UserLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/UserLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserLibrary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "UserLibrary/1.0.0": {
+      "type": "project",
+      "path": "../UserLibrary/UserLibrary.csproj",
+      "msbuildProject": "../UserLibrary/UserLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "UserLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\Юсуф\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\EXAM FINAL\\TASK3\\UserApp\\UserApp.csproj",
+      "projectUniqueName": "C:\\Users\\Юсуф\\Desktop\\EXAM FINAL\\TASK3\\UserApp\\UserApp.csproj",
       "projectName": "UserApp",
-      "projectPath": "C:\\Users\\user\\Desktop\\EXAM FINAL\\TASK3\\UserApp\\UserApp.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\EXAM FINAL\\TASK3\\UserApp\\obj\\",
+      "projectPath": "C:\\Users\\Юсуф\\Desktop\\EXAM FINAL\\TASK3\\UserApp\\UserApp.csproj",
+      "packagesPath": "C:\\Users\\Юсуф\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Юсуф\\Desktop\\EXAM FINAL\\TASK3\\UserApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Юсуф\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -31,7 +50,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Юсуф\\Desktop\\EXAM FINAL\\TASK3\\UserLibrary\\UserLibrary.csproj": {
+              "projectPath": "C:\\Users\\Юсуф\\Desktop\\EXAM FINAL\\TASK3\\UserLibrary\\UserLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

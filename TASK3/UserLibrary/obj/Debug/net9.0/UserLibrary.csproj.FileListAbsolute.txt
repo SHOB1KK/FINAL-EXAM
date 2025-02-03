@@ -1,0 +1,11 @@
+C:\Users\Юсуф\Desktop\EXAM FINAL\TASK3\UserLibrary\obj\Debug\net9.0\UserLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Юсуф\Desktop\EXAM FINAL\TASK3\UserLibrary\obj\Debug\net9.0\UserLibrary.AssemblyInfoInputs.cache
+C:\Users\Юсуф\Desktop\EXAM FINAL\TASK3\UserLibrary\obj\Debug\net9.0\UserLibrary.AssemblyInfo.cs
+C:\Users\Юсуф\Desktop\EXAM FINAL\TASK3\UserLibrary\obj\Debug\net9.0\UserLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Юсуф\Desktop\EXAM FINAL\TASK3\UserLibrary\bin\Debug\net9.0\UserLibrary.deps.json
+C:\Users\Юсуф\Desktop\EXAM FINAL\TASK3\UserLibrary\bin\Debug\net9.0\UserLibrary.dll
+C:\Users\Юсуф\Desktop\EXAM FINAL\TASK3\UserLibrary\bin\Debug\net9.0\UserLibrary.pdb
+C:\Users\Юсуф\Desktop\EXAM FINAL\TASK3\UserLibrary\obj\Debug\net9.0\UserLibrary.dll
+C:\Users\Юсуф\Desktop\EXAM FINAL\TASK3\UserLibrary\obj\Debug\net9.0\refint\UserLibrary.dll
+C:\Users\Юсуф\Desktop\EXAM FINAL\TASK3\UserLibrary\obj\Debug\net9.0\UserLibrary.pdb
+C:\Users\Юсуф\Desktop\EXAM FINAL\TASK3\UserLibrary\obj\Debug\net9.0\ref\UserLibrary.dll

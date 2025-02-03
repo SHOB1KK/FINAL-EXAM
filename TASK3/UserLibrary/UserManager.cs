@@ -1,36 +1,84 @@
-namespace UserLibrary;
-
-public class UserManager
+namespace UserLibrary
 {
-    private List<User> Users;
-
-    public UserManager()
+    public class UserManager : IUserActions
     {
-        Users = new List<User>();
-    }
+        private List<User> users;
 
-    public void AddUser(User user)
-    {
-        Users.Add(user);
-        Console.WriteLine($"User {user} added.");
-    }
-
-    public void RemoveUser(User user)
-    {
-        Users.Remove(user);
-        Console.WriteLine($"User {user} removed.");
-    }
-
-    public void ChangeUserRole(string username, Role newRole)
-    {
-        foreach (var item in Users)
+        public UserManager()
         {
-            if (item.Name == username)
+            users = new List<User>();
+        }
+
+        public void CreateUser(string userName, string email, string role)
+        {
+            User user;
+            if (role == "Admin")
             {
-                Console.WriteLine($"User {username}'s role changed to {newRole.RoleName}.");
+                user = new AdminUser(userName, email, role);
             }
-            else {
-                System.Console.WriteLine($"User: {username} not found!");
+            else if (role == "Regular")
+            {
+                user = new RegularUser(userName, email, role);
+            }
+            else
+            {
+                Console.WriteLine("Неизвестная роль, создается пользователь с ролью Regular.");
+                user = new RegularUser(userName, email, role);
+            }
+
+            users.Add(user);
+            Console.WriteLine($"Пользователь с ID {user.UserId} был добавлен.");
+        }
+
+        public void DeleteUser(int userId)
+        {
+            User user = null;
+            foreach (var u in users)
+            {
+                if (u.UserId == userId)
+                {
+                    user = u;
+                    break;
+                }
+            }
+
+            if (user != null)
+            {
+                users.Remove(user);
+                Console.WriteLine($"Пользователь с ID {userId} был удалён.");
+            }
+            else
+            {
+                Console.WriteLine("Пользователь не найден.");
+            }
+        }
+
+        public void ChangeRole(int userId, string newRole)
+        {
+            foreach (var user in users)
+            {
+                if (user.UserId == userId)
+                {
+                    user.UserRole = newRole;
+                    Console.WriteLine($"Роль пользователя с ID {userId} изменена на {newRole}.");
+                    return;
+                }
+            }
+            Console.WriteLine("Пользователь не найден.");
+        }
+
+        public void DisplayUsers()
+        {
+            if (users.Count == 0)
+            {
+                Console.WriteLine("Нет пользователей для отображения.");
+            }
+            else
+            {
+                foreach (var user in users)
+                {
+                    user.DisplayInfo();
+                }
             }
         }
     }

@@ -1,7 +1,10 @@
-namespace UserLibrary;
-
-public interface IUserActions{
-    public void CreateUser();
-    public void DeleteUser();
-    public void ChangeRole();
+namespace UserLibrary
+{
+    public interface IUserActions
+    {
+        void CreateUser(string userName, string email, string role);
+        void DeleteUser(int userId);
+        void ChangeRole(int userId, string newRole);
+        void DisplayUsers();
+    }
 }
